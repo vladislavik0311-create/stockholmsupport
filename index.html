@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stockholm Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"></div>
+<header class="topbar">
+  <button class="menu-button" id="menuButton" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="#" data-page="Главная"><span class="brand-mark">✿</span><span>STOCKHOLM <small>SUPPORT</small></span></a>
+  <div class="top-actions"><span class="online-dot"></span><span class="top-caption">Панель сообщества</span><button class="login-button" id="loginButton">Войти</button></div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<aside class="sidebar" id="sidebar" aria-hidden="true">
+  <div class="sidebar-head"><div><small>НАВИГАЦИЯ</small><h2>Разделы</h2></div><button class="close-menu" id="closeMenu" aria-label="Закрыть меню">×</button></div>
+  <nav id="navigation"></nav>
+  <div class="sidebar-footer"><span class="mini-flower">❀</span><span>Вместе мы сильнее</span></div>
+</aside>
+
+<main class="main" id="main">
+  <section class="welcome hero-card">
+    <div class="hero-copy"><div class="eyebrow">JADE PALACE · COMMUNITY HUB</div><h1>Добро пожаловать<br><em>в Stockholm Support</em></h1><p>Пространство команды, достижений и общей работы.</p><div class="hero-meta"><span class="status-pill"><i></i> Система готова</span><span class="muted">Пятница · рабочая панель</span></div></div>
+    <div class="hero-art"><div class="moon"></div><div class="branch branch-one">✿　❀　✧</div><div class="hero-bunny">兔</div><div class="hero-stamp">翠<br><small>JADE</small></div></div>
+  </section>
+  <div id="pageContent"></div>
+  <footer> <span>✿</span> Stockholm Support <span class="footer-note">Jade Palace interface</span></footer>
+</main>
+
+<div class="bunny-widget" id="bunnyWidget"><button id="bunnyButton" aria-label="Открыть помощника"><span class="bunny-face">兔</span><i></i></button><div class="bunny-pop" id="bunnyPop"><button class="pop-close" id="bunnyClose">×</button><b>Зайчик-помощник</b><p id="bunnyMessage">Привет! Не забудь выполнить задания недели ♡</p><small>Сообщение от команды</small></div></div>
+
+<div class="modal-backdrop" id="authBackdrop"><section class="auth-modal"><button class="pop-close" id="authClose">×</button><div class="eyebrow">STOCKHOLM SUPPORT</div><h2 id="authTitle">Вход в аккаунт</h2><form id="authForm"><label>Логин или почта<input id="identityInput" name="identity" required placeholder="Введите логин или почту"></label><label id="emailField" hidden>Почта<input name="email" type="email" placeholder="name@example.com"></label><label>Пароль<input name="password" required type="password" minlength="6" placeholder="Минимум 6 символов"></label><div id="registerFields" hidden><label>Повторите пароль<input name="passwordRepeat" type="password" minlength="6" placeholder="Повторите пароль"></label></div><button class="primary-button" type="submit">Продолжить</button></form><button class="discord-button" id="discordButton">◉ Продолжить через Discord</button><p class="auth-switch" id="authSwitch">Нет аккаунта? <button id="switchAuth">Регистрация</button></p><small class="auth-note">Аккаунты защищены Supabase Auth. Для входа используйте почту и пароль.</small></section></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="app.js"></script>
+</body></html>
