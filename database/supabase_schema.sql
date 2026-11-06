@@ -117,7 +117,7 @@ grant select, insert on public.audit_logs to authenticated;
 insert into public.branches(name) values ('Наборы'),('Переаттестации'),('Актив-часть'),('Вкач-локалка') on conflict(name) do nothing;
 
 -- После регистрации своего аккаунта назначь его администратором:
--- update public.profiles set role='admin' where email='ТВОЯ_ПОЧТА';
+-- update public.profiles set role='admin' where email='vladik03112008@gmail.com';
 
 
 -- Дополнительные поля профиля: пользовательские изображения и настройки.
